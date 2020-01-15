@@ -324,7 +324,7 @@ void BMSModuleManager::balanceCells()
   {
     msg.buf[c] = 0;
   }
-  for (int y = 1; y < 9; y++)
+  for (int y = 9; y < MAX_MODULE_ADDR; y++)
   {
     if (modules[y].isExisting() == 1)
     {
